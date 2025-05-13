@@ -11,8 +11,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone [your-repository-url]
-   cd your-project-name
+   git clone https://github.com/AngelCamargo404/test-laravel.git
+   cd project-name
 
 2. **Install depedencies**
     ```bash
