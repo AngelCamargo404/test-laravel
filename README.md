@@ -47,6 +47,10 @@
     ```bash
     php artisan queue:work
 
+3. **Run the project**
+    ```bash
+    php artisan serve
+
 ## Queue Configuration
 ### By default, the project uses the database queue driver. You can modify this in .env:
    ```bash
