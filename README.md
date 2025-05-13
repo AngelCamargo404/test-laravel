@@ -33,6 +33,7 @@
     php artisan migrate
 
 5. **Set up queue tables**
+    ```bash
     php artisan queue:table
     php artisan migrate
 

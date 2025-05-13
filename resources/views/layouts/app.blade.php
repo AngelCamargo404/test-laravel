@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">Sistema Escolar</a>
+            <a class="navbar-brand" href="{{ url('/') }}">School System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -17,7 +17,7 @@
                 <ul class="navbar-nav me-auto">
                     @auth
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('students.index') }}">Estudiantes</a>
+                            <a class="nav-link" href="{{ route('students.index') }}">Students</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
@@ -28,10 +28,10 @@
                 <ul class="navbar-nav ms-auto">
                     @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">Iniciar Sesión</a>
+                            <a class="nav-link" href="{{ route('login') }}">Log in</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">Registrarse</a>
+                            <a class="nav-link" href="{{ route('register') }}"> Sign up</a>
                         </li>
                     @else
                         <li class="nav-item dropdown">
@@ -42,7 +42,7 @@
                                 <li>
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
-                                        <button type="submit" class="dropdown-item">Cerrar Sesión</button>
+                                        <button type="submit" class="dropdown-item">Log out</button>
                                     </form>
                                 </li>
                             </ul>
