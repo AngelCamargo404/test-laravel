@@ -1,6 +1,4 @@
-# Laravel Employee Data Fetcher
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel test
 
 ## Project Features
 - Fetch employee data from [Dummy REST API](http://dummy.restapiexample.com/api/v1/employees)
@@ -15,3 +13,40 @@
    ```bash
    git clone [your-repository-url]
    cd your-project-name
+
+2. **Install depedencies**
+    ```bash
+    composer install
+
+3. **Configure environment**
+    ```bash
+    Update your database config in .env file:
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=laravel
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+4. **Run migrations**
+    ```bash
+    php artisan migrate
+
+5. **Set up queue tables**
+    php artisan queue:table
+    php artisan migrate
+
+## Usage
+
+1. **Fetch data from API**
+    ```bash
+    php artisan fetch-data
+
+2. **Process the queue**
+    ```bash
+    php artisan queue:work
+
+## Queue Configuration
+### By default, the project uses the database queue driver. You can modify this in .env:
+   ```bash
+   QUEUE_CONNECTION=database
